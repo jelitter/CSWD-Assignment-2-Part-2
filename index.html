@@ -1,58 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>CIT Chat Forum</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-            rel="shortcut icon"
-            href="assets/img/favicon.ico"
-            type="image/x-icon"
-        />
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CIT Chat Forum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
 
-        <link
-            rel="stylesheet"
-            type="text/css"
-            media="screen"
-            href="style/main.css"
-        />
-    </head>
-    <body>
-        <div class="header">
-            <div class="title">CIT Chat Forum</div>
-            <div class="navbar">
-                <a href="#">Register</a> <a href="#">Login</a>
-                <a href="#">Messages</a>
-            </div>
+    <link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="title">CIT Chat Forum</div>
+      <div class="navbar"><a href="#">Register</a> <a href="#">Login</a> <a href="#">Messages</a></div>
+    </div>
+
+    <div class="main">
+      <div class="cta">
+        <div class="card">
+          <div class="card-title">Register</div>
+          <div class="card-body card-register"></div>
+          <div class="card-footer">Step 1</div>
         </div>
-
-        <div class="main">
-            <div class="cta">
-                <div class="card">
-                    <div class="card-title">Register</div>
-                    <div class="card-body card-register"></div>
-                    <div class="card-footer">Step 1</div>
-                </div>
-                <div class="card">
-                    <div class="card-title">Login</div>
-                    <div class="card-body card-login"></div>
-                    <div class="card-footer">Step 2</div>
-                </div>
-                <div class="card">
-                    <div class="card-title">Leave Message for other users</div>
-                    <div class="card-body card-message"></div>
-                    <div class="card-footer">Step 3</div>
-                </div>
-            </div>
-            <div class="members">
-                <span>Latest Members</span>
-                <div id="caroussel"></div>
-            </div>
+        <div class="card">
+          <div class="card-title">Login</div>
+          <div class="card-body card-login"></div>
+          <div class="card-footer">Step 2</div>
         </div>
+        <div class="card">
+          <div class="card-title">Leave Message for other users</div>
+          <div class="card-body card-message"></div>
+          <div class="card-footer">Step 3</div>
+        </div>
+      </div>
+      <div class="members">
+        <span>
+          <div>Latest Members</div>
+          <div>Mouse over the list to stop</div>
+        </span>
+        <span id="caroussel"></span>
+      </div>
+    </div>
 
-        <div class="footer">&copy; Isaac Sanchez (CSWD), 2018</div>
+    <div class="footer">&copy; Isaac Sanchez (CSWD), 2018</div>
 
-        <script src="/js/script.js"></script>
-    </body>
+    <script src="/js/script.js"></script>
+  </body>
 </html>
